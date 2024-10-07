@@ -1,0 +1,87 @@
+<div class="reviews">
+      <h3>Reviews</h3>
+</div>
+
+<main class="reviews-main">
+
+
+  <div class="review-container">
+  <div class="wrapper">
+    <div class="media-container">
+  <div class="column-left">
+    <img id="side" src="{{filmDetail.poster}}">
+  </div>
+  <div class="trailer">
+  <!--<iframe ng-src="{{trustSrc(filmDetail.link)}}" frameborder="0" allowfullscreen></iframe>-->
+  <iframe width="560" height="315" ng-src="{{trustSrc(trailer)}}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+
+  <div class="reviewBody">
+    <a href="javascript:window.print()">
+    <div id="print">
+      <p>PRINT REVIEW</p>
+    </div>
+  </a>
+    <div class="review">
+      <h3>{{filmDetail.title}} <span>({{filmDetail.year}})</span></h3>
+      <br>
+      <h5>Wesley Huang </h5>
+      <br>
+      <br>
+      <p class="tab">{{review.p1}}</p>
+      <br>
+      <p class="tab">{{review.p2}}</p>
+      <br>
+      <p class="tab">{{review.p3}}</p>
+      <br>
+      <p class="tab">{{review.p4}}</p>
+      <br>
+      <p class="tab">{{review.p5}}</p>
+      <br>
+      <br>
+      <div class="film-info">
+        <div class="first-four">
+        <h7>Directed by</h7>
+        <p>{{filmDetail.director}}</p>
+        <br>
+        <h7>Written by</h7>
+        <p>{{filmDetail.writer}}</p>
+        <br>
+        <h7>Cast</h7>
+        <div id="actors">
+        <p>{{filmDetail.actors}}</p>
+        </div>
+        <br>
+        <h7>Genre</h7>
+        <p>{{filmDetail.genre}}</p>
+        <br>
+      </div>
+        <div class="second-four">
+        <h7>Country</h7>
+        <p>{{filmDetail.country}}</p>
+        <br>
+        <h7>Language</h7>
+        <p>{{filmDetail.language}}</p>
+        <br>
+        <h7>Runtime</h7>
+        <p>{{filmDetail.runtime}}</p>
+        <br>
+        <h7>Release Date</h7>
+        <p>{{filmDetail.release}}</p>
+        <br>
+      </div>
+
+      </div>
+      <div class='plot'>
+        <h7>Plot</h7>
+        <p>{{filmDetail.plot}}
+      </div>
+
+  </div>
+  </div>
+
+
+</div>
+</div>
+</main>

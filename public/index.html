@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="wezApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./js/reviews/reviews.css">
+        <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Wez on Film</title>
+    </head>
+    <body ng-controller="filmCtrl">
+        <div class="side-menu">
+          <div class="cancel">
+            <a href=""><img src="./assets/icons/close-x.png"></a>
+          </div>
+            <div class="nav-items">
+                <p><a ui-sref="home">HOME</a></p>
+                <p><a ui-sref="library">LIBRARY</a></p>
+                <p><a ui-sref="favorites">FAVORITES</a></p>
+                <p><a ui-sref="contact">CONTACT</a></p>
+            </div>
+        </div>
+        <header>
+
+          <div class="hamburger">
+            <a href="">
+            <img src="./assets/icons/burger-menu.png">
+          </a>
+          </div>
+            <div class="title">
+              <a ui-sref="home">
+                <h1 id="wezonfilm">WEZ ON FILM</h1>
+              </a>
+            </div>
+        </header>
+        <main>
+
+        <div class="view-container">
+        <div ui-view>
+          <!--- SECRET PORTAL WHERE AWESOME HAPPENS -->
+        </div>
+      </div>
+
+
+
+        <footer>
+
+          <div class="nav-items-footer">
+            <h3>EXPLORE</h3>
+              <p><a ui-sref="home">HOME</a></p>
+              <p><a ui-sref="library">LIBRARY</a></p>
+              <p><a ui-sref="favorites">FAVORITES</a></p>
+              <p><a ui-sref="contact">CONTACT</a></p>
+          </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/controller.js"></script>
+        <script src="./js/service.js"></script>
+        <script src="./js/home/homeCtrl.js"></script>
+        <script src="./js/favorites/favCtrl.js"></script>
+        <script src="./js/reviews/reviewsCtrl.js"></script>
+        <script src="./js/admin/adminCtrl.js"></script>
+        <script src="./js/admin/movieCard.js"></script>
+        <script src="./js/admin/favoriteCard.js"></script>
+    </body>
+</html>

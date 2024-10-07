@@ -1,0 +1,20 @@
+<section>
+    <h1>admin</h1>
+
+    <h2>Library</h2>
+    <input type="text" ng-model="term"><div class="search-admin" ng-click="getMovies(term)">search</div>
+    <div class="movie-search-wrapper">
+    <div class="movie-search" ng-repeat="film in movies">
+        <movie-card film="film"></movie-card>
+    </div>
+    </div>
+
+    <h2>Favorites</h2>
+    <input type="text" ng-model="fav"><div class="search-admin" ng-click="getFavs(fav)">search</div>
+    <div class="movie-search-wrapper">
+    <div class="movie-search" ng-repeat="favorite in favorites">
+        <favorite-card favorite="favorite"></favorite-card>
+    </div>
+    </div>
+
+</section>
